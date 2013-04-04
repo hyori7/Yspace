@@ -1,0 +1,313 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeFile="yspace.Master.cs" Inherits="yspace.yspace" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<pages validateRequest="false" enableEventValidation="false" /> 
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<Link rel="SHORTCUT ICON" href="images/smartpage.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<meta http-equiv="X-UA-Compatible" content="iE=7" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>YSpace</title>
+
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="../jquery-latest.js"></script>
+<script type="text/javascript" src="../vrBar.js"></script>
+
+   <%-- <style type="text/css">
+        .style1
+        {
+            width: 31px;
+        }
+        #txtUserName
+        {
+            width: 76px;
+            height: 22px;
+        }
+        #txtUserPass
+        {
+            width: 77px;
+        }
+        .style2
+        {
+            width: 77px;
+        }
+    </style>--%>
+
+    </head>
+<body>
+<form id="formfortextbox" runat="server">
+<div id="wrapper">    
+    <div id="header">             
+	    <div id="logo">
+            <a href="../default.aspx"><img src="images/logo00.jpg" width="160"/></a>
+            <img src="images/main-banner.jpg" height="70" width="635"></img>
+            <div id="search" style="height: 70px;">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:TextBox ID="searchBox" runat="server" Width="145px" Font-Bold="True" 
+                                Font-Strikeout="False" ForeColor="#006699">Find what you want</asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="admin" runat="server" Text="Admin" onclick="admin_Click1" Width="60px" Height="22px" BackColor="#3399FF" ForeColor="White" Style="float: left" />
+                            <asp:Button ID="searchBtn" runat="server" OnClick="SearchBtn_Clicked" Text="Search"
+                                Width="60px" Height="22px" BackColor="#3399FF" ForeColor="White" Style="float: right" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+            <div id="dolphinnav">
+            <ul>
+                <li><a href="../default.aspx" title="Home page"><span>Home</span></a></li>
+                <li><a href="../About.aspx" title="about"><span>ABOUT</span></a></li>
+                <li><a href="../News.aspx"><span>NEWS</span></a></li>
+		        <li><a href="../Display.aspx"><span>PHOTOS</span></a></li>
+		        <li><a href="../Board_list.aspx"><span>FORUM</span></a></li>
+		        <li><a href="../Links.aspx"><span>LINKS</span></a></li>
+		        <li><a href="../contactUs.aspx"><span>CONTACT US</span></a></li>
+		       
+            </ul>
+                
+            </div>	    
+	    </div>	
+</div>
+<!-- end header -->
+	<!-- start page -->
+	<div id="page">
+	<div id="left-content">
+	<div id="sMenu" class="sMenu" style="margin-bottom:5px;">
+	    <ul>
+
+		    <li><a href="../spaces.aspx"><span>SPACES</span></a>
+		        <ul>
+		           <li><a href="../DisplayArticle.aspx?category=TYPES OF SPACE Libraries"><span>Libraries</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Child and youth friendly cities "><span>
+                        Child and youth friendly cities</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Natural environments"><span>
+                        Natural environments</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Parks"><span>Parks</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Public museums and galleries"><span>
+                        Public museums and galleries</span></a></li>
+                        <li><a href="../DisplayArticle.aspx?category=Shopping centres"><span>Shopping centres </span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Spaces Other"><span>Spaces- other</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Squares and streetscapes"><span>
+                        Squares <br />and streetscapes</span></a></li>
+                    <li><a href="../DisplayArticle.aspx?category=Virtual"><span>Virtual</span></a></li>
+                </ul>
+		    </li>
+		    		
+		    <li><a href="../STRATEGIES.aspx"><span>STRATEGIES</span></a>
+			    <ul>
+				    <li><a href="../DisplayArticle.aspx?category=INCLUSIVE STRATEGIES Activities"><span>
+                        Inclusive strategies activities</span></a></li>
+				   
+				    <li><a href="../DisplayArticle.aspx?category=Policing"><span>Policing</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Policy"><span>Policy</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Childrens and young peoples rights"><span>
+                        Children&#39;s and young people&#39;s rights</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Consultation and engagement with young people"><span>
+                        Consultation<br /> and engagement with young people</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Facility provision"><span>Facility 
+                        provision</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Human services"><span>Human 
+                        services</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Legislation"><span>Legislation</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Management"><span>Management </span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Planning and design"><span>
+                        Planning and design</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Safety promotion"><span>Safety 
+                        promotion</span></a></li>
+			    </ul>
+		    </li>
+		    <li><a href="../USES.aspx"><span>USES</span></a>
+		    <ul>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=AVAILABLE USES Commercial"><span>AVAILABLE USES Commercial</span></a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Cultural">Cultural</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Development incl. physical, spiritual, emotional, social, cognitive, etc.">Development incl. physical, spiritual, etc.</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Health">Health</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Play">Play</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Political">Political</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Recreational">Recreational</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Social">Social</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Sport">Sport</a>
+		    </li>
+		    <li>
+		    <a href="../DisplayArticle.aspx?category=Transport">Transport</a>
+		    </li>
+		    
+		    </ul>
+		    </li>
+		    <li><a href="../DIVERSITY.aspx"><span>DIVERSITY</span></a>
+
+			    <ul>
+				    <li><a href="../DisplayArticle.aspx?category=A VARIETY OF SUB-POPULATIONS Females"><span>
+                        A variety of<br /> sub-populations<br /> females </span></a></li>
+                        <li><span> _</span></li>
+				    <li><a href="../DisplayArticle.aspx?category=Indigenous"><span>Indigenous</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Other sub-populations"><span>Other 
+                        sub-populations  </span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Queer sexuality"><span>Queer 
+                        sexuality  </span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Disabilities"><span>Disabilities</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Gangs"><span>Gangs</span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Homeless young people"><span>
+                        Homeless<br /> young people  </span></a></li>
+				    <li><a href="../DisplayArticle.aspx?category=Subcultures"><span>Subcultures</span></a></li>
+			    </ul>
+		    </li>
+		    <li><a href="../RESEARCH.aspx"><span>RESEARCH</span></a>
+		    <ul>
+		    <li><a  href="../DisplayArticle.aspx?category=Conference papers and presentations"><span>Conference papers and presentations</span></a></li>
+		    <li><a  href="../DisplayArticle.aspx?category=Literature reviews and bibliographies"><span>Literature reviews and bibliographies</span></a></li>
+		    <li><a  href="../DisplayArticle.aspx?category=Research"><span>Research</span></a></li>
+		    </ul>
+		    </li>
+	    </ul>
+	    
+
+    </div>
+	 	
+	 	<div id="sidebar1" class="sidebar" style="background-color: #CCCCCC; text-align: left;">
+			<ul>
+				<li>
+					<h2>Top links</h2>
+					<ul>
+				    <li><a href="http://www.pps.org" target="_blank">United States of America - Project 
+                        for Public Space</a></li>
+				    <li><a href="http://www.openspace.eca.ac.uk/" target="_blank">United Kingdom - 
+                        Openspace</a></li>
+				    <li><a href="http://www.jrf.org.uk/" target="_blank">United Kingdom- The Joseph 
+                        Rowntree Foundation</a></li>
+				    <li><a href="http://www.acys.info/resources/topics/public_space" target="_blank">
+                        Australia- Australian Clearinghouse for Youth Studies Public Space Page
+                        </a>
+                    </li> 
+                    </ul>
+				</li>  
+			</ul>				
+	</div>
+		
+	
+</div>
+		
+		
+		
+	</div>
+<!-- start content -->
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+               <div id="content">  
+               
+                </div>
+        </asp:ContentPlaceHolder>
+<!-- start sidebars -->
+		<div id="right-content">
+		
+		<div id="sidebar2" class="sidebar" style="background-color: #CCCCCC;"
+        margin-bottom:40px">
+            <ul>
+                <li>
+                    <div>
+                        <h2>
+                            Supporter Login</h2>
+                        <div id="searchText">
+                         <table id="LoginForm" runat="server" border="0" cellpadding="0" cellspacing="3">
+            <tr>
+                <td class="style3">
+                
+                        <asp:Label ID="userTxt" runat="server" Text="Label"></asp:Label>
+                        <asp:Button ID="Button2" runat="server" Text="Logout" style="float:right" Width="50" Height="20" 
+                        onclick="Logout" BackColor="#3399FF" ForeColor="White" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Your Name :<br />
+                    <asp:TextBox ID="txtName" runat="server" Height="20px" Width="132px"></asp:TextBox>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Your Password :<br />
+                    <asp:TextBox ID="txtPwd" runat="server" Height="20px" TextMode="Password" 
+                        Width="134px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="btnLoginOK" runat="server" Text="Login" 
+                        Width="60px" onclick="btnLoginOK_Click" BackColor="#3399FF" ForeColor="White"  />
+                    &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Register" 
+                        Width="60px" onclick="Button1_Click" BackColor="#3399FF" ForeColor="White"  />
+                    <br />
+                </td>
+            </tr>
+        </table>
+        </div>
+        </div>
+        </div>
+            <div id="sidebar2" class="sidebar" style="background-color: #CCCCCC;">
+            <ul>
+				<li>
+					<h2>SUPPORTERS</h2>
+					<ul>    
+                        <li><a href="http://www.qut.edu.au" target="_blank" title="qut website"><img src="images/qutlogo.jpg" style="width:50px"/></a>
+                        <a href="http://www.bonproductions.net" target="_blank" title="bon production"><img src="images/bonlogo.png" style="width:50px"/></a>
+                        </li>                            
+				    </ul>
+				</li>
+				</ul>
+		</div>
+            <div id="sidebar2" class="sidebar" style="background-color: #CCCCCC;">
+        <ul>
+				<li>
+					<h2>Supporter benefits</h2>
+					<ul>
+					    <li>Become a supporter</li>
+						<li>Upload photho</li>
+                        <li>Discuss forum</li>						
+					</ul>
+				</li>
+			</ul>
+		</div>
+        </div>
+		<div style="clear: both;">&nbsp;</div>
+		
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright">&copy;&nbsp;&nbsp;2010 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="http://www.yspace.net/">Yspace dev-team</a>.</p>
+</div>
+</form>
+</body>
+</html>

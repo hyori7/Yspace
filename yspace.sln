@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Yspace22.10", ".", "{35B8A08B-08FC-40D8-A335-557D6C031C25}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/yspace"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\yspace\yspace\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\yspace\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/yspace"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\yspace\yspace\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\yspace\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "26459"
+		VWDVirtualPath = "/yspace"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35B8A08B-08FC-40D8-A335-557D6C031C25}.Debug|.NET.ActiveCfg = Debug|.NET
+		{35B8A08B-08FC-40D8-A335-557D6C031C25}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
